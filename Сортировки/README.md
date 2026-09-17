@@ -19,12 +19,12 @@
 
 ### Пример
 
-**isheap.in**
+**sort_A.in**
 ```c++
 1 4 2 3 4
 ```
 
-**isheap.out**
+**sort_A.out**
 ```c++
 4 4 3 2 1
 ```
