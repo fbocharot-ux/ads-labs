@@ -1,2 +1,2 @@
 # Лабораторные работы по курсу "Алгоритмы и структуры данных"
-* [Куча, сортировки, двоичный поиск](term%201/Heaps%2C%20sort%2C%20binsearch) - [Условия](term%201/Heaps%2C%20sort%2C%20binsearch/README.md)
+* [Cортировки](term%201/Heaps%2C%20sort%2C%20binsearch) - [Условия](term%201/Heaps%2C%20sort%2C%20binsearch/README.md)
