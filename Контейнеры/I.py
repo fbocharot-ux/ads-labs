@@ -1,25 +1,26 @@
 balls = list(map(int, input().split()))
+stack = []
 count = 0
 
-while True:
-    found_sequence = False
-    i = 0
+for color in balls:
+    if not stack:
+        stack.append([color, 1])
+    else:
+        if stack[-1][0] == color:
+            stack[-1][1] += 1
+        else:
+            if stack[-1][1] >= 3:
+                count += stack[-1][1]
+                stack.pop()
+                if stack and stack[-1][0] == color:
+                    stack[-1][1] += 1
+                else:
+                    stack.append([color, 1])
+            else:
+                stack.append([color, 1])
 
-    while i < len(balls):
-        j = i
-        while j < len(balls) and balls[j] == balls[i]:
-            j += 1
-
-        length = j - i
-        if length >= 3:
-            count += length
-            balls = balls[:i] + balls[j:]
-            found_sequence = True
-            break
-
-        i = j
-
-    if not found_sequence:
-        break
+if stack and stack[-1][1] >= 3:
+    count += stack[-1][1]
+    stack.pop()
 
 print(count)
