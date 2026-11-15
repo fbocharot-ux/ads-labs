@@ -21,7 +21,9 @@ class Heap:
             j = self.indMaxChild(i)
             if self.heap[i]<self.heap[j]:
                 self.heap[i],self.heap[j] = self.heap[j],self.heap[i]
-            i=j
+                i = j
+            else:
+                break
     def Extract(self):
         if self.size==0:
             return None
