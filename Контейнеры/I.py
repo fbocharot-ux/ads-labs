@@ -1,4 +1,4 @@
-balls = list(map(int, input().split()))
+balls = list(map(int, input().split()))[1:]
 stack = []
 count = 0
 
