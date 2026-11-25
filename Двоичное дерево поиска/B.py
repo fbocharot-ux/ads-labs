@@ -1,5 +1,3 @@
-import sys
-
 class Node:
 
     def __init__(self, key):
@@ -49,9 +47,9 @@ class BinarySearchTree:
             vertexes = next_vertexes
         return levels
 
+
 bst = BinarySearchTree()
-numbers = sys.stdin.read().split()
-for el in numbers:
+for el in input().split():
     if el != "0":
         bst.insert(int(el))
     else:
