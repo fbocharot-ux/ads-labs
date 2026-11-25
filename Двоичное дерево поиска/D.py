@@ -1,6 +1,3 @@
-import sys
-
-
 class Node:
 
     def __init__(self, key):
@@ -51,9 +48,9 @@ class BinarySearchTree:
             return self._max_node(current.left).data
         return parent.data
 
+
 bst = BinarySearchTree()
-numbers = sys.stdin.read().split()
-for el in numbers:
+for el in input().split():
     if el != "0":
         bst.insert(int(el))
     else:
