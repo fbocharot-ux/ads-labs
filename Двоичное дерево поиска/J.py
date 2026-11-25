@@ -1,6 +1,4 @@
-
 class Node:
-    __slots__ = ("data", "count", "left", "right")
 
     def __init__(self, key):
         self.data = key
